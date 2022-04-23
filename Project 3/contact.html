@@ -1,0 +1,77 @@
+<!--
+    
+    Project 3 HTML 
+    Name: Bryan Balzer
+    Date: 2022-04-24
+    Description: contact HTML file for project 3.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Rent-a-Pet</title>
+        <script src="formValidate.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <div class="content">  
+        <h1 id="contactH1">Rent-a-Pet: Contact Us</h1>      
+        <h4 id="contactH4">If you are interested in renting a dog or cat. <br>Please leave your personal information and we will contact you. <br>We appreciate feedback on our services as well!</h4>
+        <div>
+            <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="products.html">Services</a></li>
+                    <li><a href="about.html">Meet the pets!</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+        <form id="contactForm" action="index.html" method="post">
+            <ul id="contactUs">
+                <li>
+                    <label for="fullName">Full Name:</label>
+                    <input id="fullName" name="fullName" type="text"/>
+                    <p class="error" id="fullName_error">*Please enter your full name</p>
+                    <p class="error" id="nameFormat_error">* Invalid name format</p>
+                </li>
+
+                <li>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="phoneNumber" name="phoneNumber" type="text"/>
+                    <p class="error" id="phoneNumber_error">*Please enter your phone number</p>
+                    <p class="error" id="phoneNumberFormat_error">* Invalid phone number</p>
+                </li>
+
+                <li>
+                    <label for="email">Email Address:</label>
+                    <input id="emailAddress" name="email" type="text"/>
+                    <p class="error" id="emailAddress_error">*Please enter your email address</p>
+                    <p class="error" id="emailFormat_error">* Invalid email address</p>
+                </li>
+
+                <li>
+                    <label>Comments/Concerns:</label>
+                    <textarea id="textArea" name="textArea" rows="5" maxlength="50"></textarea>
+                </li>
+            </ul>
+        </form>
+            <p id="contactButtons">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="clear">Clear Page</button>
+            </p>        
+        <footer>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="products.html">Services</a></li>
+                <li><a href="about.html">Meet the pets!</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </footer>
+    </div>
+    </body>
+</html>        
